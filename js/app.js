@@ -55,8 +55,8 @@ const switchTab = (id) => {
 };
 
 const createPost = (post) => {
-  console.log(post);
   const image = post.userImage;
+  const mainImage = post.image;
   const div = document.createElement("article");
   div.classList.add("post");
   div.innerHTML = `
@@ -81,7 +81,7 @@ const createPost = (post) => {
                 <div class="post__medias">
                   <img
                     class="post__media"
-                    src="${image}"
+                    src="${mainImage}"
                     alt="Post Content"
                   />
                 </div>
